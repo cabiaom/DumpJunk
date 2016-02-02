@@ -8,12 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		CF1ABA551C5F3CF8000E710E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1ABA541C5F3CF8000E710E /* AppDelegate.swift */; };
-		CF1ABA571C5F3CF8000E710E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1ABA561C5F3CF8000E710E /* ViewController.swift */; };
 		CF1ABA5A1C5F3CF8000E710E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF1ABA581C5F3CF8000E710E /* Main.storyboard */; };
 		CF1ABA5C1C5F3CF8000E710E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF1ABA5B1C5F3CF8000E710E /* Assets.xcassets */; };
 		CF1ABA5F1C5F3CF8000E710E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF1ABA5D1C5F3CF8000E710E /* LaunchScreen.storyboard */; };
 		CF1ABA6A1C5F3CF9000E710E /* DumpThatJunkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1ABA691C5F3CF9000E710E /* DumpThatJunkTests.swift */; };
 		CF1ABA751C5F3CF9000E710E /* DumpThatJunkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1ABA741C5F3CF9000E710E /* DumpThatJunkUITests.swift */; };
+		CF1ABA851C605317000E710E /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1ABA841C605317000E710E /* SearchViewController.swift */; };
+		CF1ABA871C605F41000E710E /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1ABA861C605F41000E710E /* AddViewController.swift */; };
+		CF1ABA891C605F5E000E710E /* BrowseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1ABA881C605F5E000E710E /* BrowseViewController.swift */; };
+		CF1ABA8B1C605F86000E710E /* DumpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1ABA8A1C605F86000E710E /* DumpViewController.swift */; };
+		CF1ABA8D1C609760000E710E /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1ABA8C1C609760000E710E /* MenuTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +40,6 @@
 /* Begin PBXFileReference section */
 		CF1ABA511C5F3CF8000E710E /* DumpThatJunk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DumpThatJunk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF1ABA541C5F3CF8000E710E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CF1ABA561C5F3CF8000E710E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CF1ABA591C5F3CF8000E710E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CF1ABA5B1C5F3CF8000E710E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CF1ABA5E1C5F3CF8000E710E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +50,11 @@
 		CF1ABA701C5F3CF9000E710E /* DumpThatJunkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DumpThatJunkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF1ABA741C5F3CF9000E710E /* DumpThatJunkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DumpThatJunkUITests.swift; sourceTree = "<group>"; };
 		CF1ABA761C5F3CF9000E710E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF1ABA841C605317000E710E /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		CF1ABA861C605F41000E710E /* AddViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
+		CF1ABA881C605F5E000E710E /* BrowseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrowseViewController.swift; sourceTree = "<group>"; };
+		CF1ABA8A1C605F86000E710E /* DumpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DumpViewController.swift; sourceTree = "<group>"; };
+		CF1ABA8C1C609760000E710E /* MenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,11 +106,15 @@
 			isa = PBXGroup;
 			children = (
 				CF1ABA541C5F3CF8000E710E /* AppDelegate.swift */,
-				CF1ABA561C5F3CF8000E710E /* ViewController.swift */,
 				CF1ABA581C5F3CF8000E710E /* Main.storyboard */,
 				CF1ABA5B1C5F3CF8000E710E /* Assets.xcassets */,
 				CF1ABA5D1C5F3CF8000E710E /* LaunchScreen.storyboard */,
 				CF1ABA601C5F3CF8000E710E /* Info.plist */,
+				CF1ABA841C605317000E710E /* SearchViewController.swift */,
+				CF1ABA861C605F41000E710E /* AddViewController.swift */,
+				CF1ABA881C605F5E000E710E /* BrowseViewController.swift */,
+				CF1ABA8A1C605F86000E710E /* DumpViewController.swift */,
+				CF1ABA8C1C609760000E710E /* MenuTableViewController.swift */,
 			);
 			path = DumpThatJunk;
 			sourceTree = "<group>";
@@ -256,8 +268,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CF1ABA571C5F3CF8000E710E /* ViewController.swift in Sources */,
+				CF1ABA851C605317000E710E /* SearchViewController.swift in Sources */,
 				CF1ABA551C5F3CF8000E710E /* AppDelegate.swift in Sources */,
+				CF1ABA8D1C609760000E710E /* MenuTableViewController.swift in Sources */,
+				CF1ABA891C605F5E000E710E /* BrowseViewController.swift in Sources */,
+				CF1ABA871C605F41000E710E /* AddViewController.swift in Sources */,
+				CF1ABA8B1C605F86000E710E /* DumpViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
