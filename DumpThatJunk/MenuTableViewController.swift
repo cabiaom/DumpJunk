@@ -77,5 +77,11 @@ class MenuTableViewController: UITableViewController {
             //menuVC?.menuName = "Find Your Stuff"
         }
     }
+    
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        if indexPath.row == 1{
+            self.performSegueWithIdentifier("AddSegue", sender: self)
+        }
+    }
    
 }

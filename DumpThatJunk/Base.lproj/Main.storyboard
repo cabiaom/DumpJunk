@@ -80,6 +80,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="V4a-9p-9kV"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="Camera" destination="YUn-se-83M" id="CUJ-TA-zjO"/>
@@ -89,7 +90,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="obb-qh-wiq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1143.5" y="1183.5"/>
+            <point key="canvasLocation" x="647.5" y="1279.5"/>
         </scene>
         <!--Menu Table View Controller-->
         <scene sceneID="5Jg-vf-oQf">
@@ -119,6 +120,9 @@
                     </tableView>
                     <navigationItem key="navigationItem" id="dUL-6I-qdB"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <segue destination="o3f-zN-dyE" kind="push" identifier="AddSegue" id="QOb-A3-odh"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gWQ-Rq-Nsd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
