@@ -1,25 +1,149 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="rxq-9g-eiy">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Search View Controller-->
+        <scene sceneID="Nd7-2Y-Vjl">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Kga-kh-qhq" customClass="SearchViewController" customModule="DumpThatJunk" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="Afa-NN-Rx7"/>
+                        <viewControllerLayoutGuide type="bottom" id="beA-hH-UVO"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <view key="view" contentMode="scaleToFill" id="Fih-8X-fQM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="SearchButton" translatesAutoresizingMaskIntoConstraints="NO" id="Cjn-ia-G43">
+                                <rect key="frame" x="67" y="188" width="240" height="128"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FCE-AO-xhf">
+                                <rect key="frame" x="229" y="104" width="78" height="30"/>
+                                <state key="normal" title="Search!"/>
+                                <connections>
+                                    <action selector="searchButtonPressed:" destination="Kga-kh-qhq" eventType="touchUpInside" id="p0m-CK-Wba"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="SearchLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w4B-Ad-Qjg">
+                                <rect key="frame" x="92" y="64" width="141" height="109"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="viW-It-f6U"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="SearchLabel" destination="w4B-Ad-Qjg" id="h3p-lc-65M"/>
+                        <outlet property="searchImage" destination="Cjn-ia-G43" id="NDe-kR-aT0"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eag-dv-gAd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1143.5" y="470.5"/>
+        </scene>
+        <!--AddViewController-->
+        <scene sceneID="M1a-Af-wDG">
+            <objects>
+                <viewController title="AddViewController" id="o3f-zN-dyE" customClass="AddViewController" customModule="DumpThatJunk" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0TH-cW-JJn"/>
+                        <viewControllerLayoutGuide type="bottom" id="8vg-00-Dii"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="iDy-6J-VEi">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YUn-se-83M">
+                                <rect key="frame" x="55" y="51" width="54" height="30"/>
+                                <state key="normal" title="Camera"/>
+                                <connections>
+                                    <action selector="CameraAction:" destination="o3f-zN-dyE" eventType="touchUpInside" id="hWv-5P-CL9"/>
+                                    <action selector="PhotoLibraryAction:" destination="o3f-zN-dyE" eventType="touchUpInside" id="hsV-Jv-6cx"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EhA-Ac-u7e">
+                                <rect key="frame" x="55" y="100" width="272" height="508"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gSW-Cy-GIx">
+                                <rect key="frame" x="239" y="51" width="88" height="30"/>
+                                <state key="normal" title="Photo library"/>
+                                <connections>
+                                    <action selector="PhotoLibraryAction:" destination="o3f-zN-dyE" eventType="touchUpInside" id="hwl-Jn-Bfa"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="Camera" destination="YUn-se-83M" id="CUJ-TA-zjO"/>
+                        <outlet property="ImageDisplay" destination="EhA-Ac-u7e" id="Vfg-Is-q5m"/>
+                        <outlet property="PhotoLibrary" destination="gSW-Cy-GIx" id="GHB-YP-Ke8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="obb-qh-wiq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1143.5" y="1183.5"/>
+        </scene>
+        <!--Menu Table View Controller-->
+        <scene sceneID="5Jg-vf-oQf">
+            <objects>
+                <tableViewController id="dka-OW-Ip6" customClass="MenuTableViewController" customModule="DumpThatJunk" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="142" sectionHeaderHeight="18" sectionFooterHeight="18" id="4cj-iG-dQS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="MenuCell" rowHeight="142" id="J1w-e5-WOO">
+                                <rect key="frame" x="0.0" y="114" width="375" height="142"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="J1w-e5-WOO" id="ZmB-XF-lKP">
+                                    <rect key="frame" x="0.0" y="0.0" width="342" height="141"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="Kga-kh-qhq" kind="push" identifier="ShowMenu" id="C1J-w7-ZWq"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="dka-OW-Ip6" id="SDa-cp-J76"/>
+                            <outlet property="delegate" destination="dka-OW-Ip6" id="Ehb-6L-zLA"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="dUL-6I-qdB"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gWQ-Rq-Nsd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="647.5" y="470.5"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="mYr-Z3-2pc">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="rxq-9g-eiy" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="gM1-oj-JCa">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="dka-OW-Ip6" kind="relationship" relationship="rootViewController" id="7EM-nO-xOk"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="82U-JT-DSA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="159" y="494"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="SearchButton" width="2433" height="1826"/>
+    </resources>
 </document>
