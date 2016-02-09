@@ -18,6 +18,7 @@
 		CF1ABA891C605F5E000E710E /* BrowseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1ABA881C605F5E000E710E /* BrowseViewController.swift */; };
 		CF1ABA8B1C605F86000E710E /* DumpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1ABA8A1C605F86000E710E /* DumpViewController.swift */; };
 		CF1ABA8D1C609760000E710E /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1ABA8C1C609760000E710E /* MenuTableViewController.swift */; };
+		CF1ABA8F1C672042000E710E /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1ABA8E1C672042000E710E /* Menu.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		CF1ABA881C605F5E000E710E /* BrowseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrowseViewController.swift; sourceTree = "<group>"; };
 		CF1ABA8A1C605F86000E710E /* DumpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DumpViewController.swift; sourceTree = "<group>"; };
 		CF1ABA8C1C609760000E710E /* MenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
+		CF1ABA8E1C672042000E710E /* Menu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +117,7 @@
 				CF1ABA881C605F5E000E710E /* BrowseViewController.swift */,
 				CF1ABA8A1C605F86000E710E /* DumpViewController.swift */,
 				CF1ABA8C1C609760000E710E /* MenuTableViewController.swift */,
+				CF1ABA8E1C672042000E710E /* Menu.swift */,
 			);
 			path = DumpThatJunk;
 			sourceTree = "<group>";
@@ -205,6 +208,7 @@
 				TargetAttributes = {
 					CF1ABA501C5F3CF8000E710E = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = X45GK2BG54;
 					};
 					CF1ABA641C5F3CF9000E710E = {
 						CreatedOnToolsVersion = 7.2;
@@ -270,6 +274,7 @@
 			files = (
 				CF1ABA851C605317000E710E /* SearchViewController.swift in Sources */,
 				CF1ABA551C5F3CF8000E710E /* AppDelegate.swift in Sources */,
+				CF1ABA8F1C672042000E710E /* Menu.swift in Sources */,
 				CF1ABA8D1C609760000E710E /* MenuTableViewController.swift in Sources */,
 				CF1ABA891C605F5E000E710E /* BrowseViewController.swift in Sources */,
 				CF1ABA871C605F41000E710E /* AddViewController.swift in Sources */,
@@ -415,10 +420,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = DumpThatJunk/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.markcabiao.DumpThatJunk;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -426,10 +434,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = DumpThatJunk/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.markcabiao.DumpThatJunk;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -500,6 +511,7 @@
 				CF1ABA7B1C5F3CF9000E710E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CF1ABA7C1C5F3CF9000E710E /* Build configuration list for PBXNativeTarget "DumpThatJunkTests" */ = {
 			isa = XCConfigurationList;
@@ -508,6 +520,7 @@
 				CF1ABA7E1C5F3CF9000E710E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CF1ABA7F1C5F3CF9000E710E /* Build configuration list for PBXNativeTarget "DumpThatJunkUITests" */ = {
 			isa = XCConfigurationList;
@@ -516,6 +529,7 @@
 				CF1ABA811C5F3CF9000E710E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
